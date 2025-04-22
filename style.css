@@ -10,13 +10,13 @@ body{
  }
 .sec_1 ul{
   display: flex;
+  gap: 20px;
 }
 .button1{
   background-color: red;
   color: white;
   font-size: 20px;
   padding: 15px 50px;
-  margin-right: 20px;
 }
 .button2{
   background-color: green;
@@ -163,17 +163,35 @@ h3{
   margin: 5px;
 }
 .sec_15{
-  display: flex;
-  justify-content: space-between;
   border-top: solid 1px;
   margin-top: 50px;
+  border-bottom: solid 1px;
+  margin-bottom: 10px;
 }
-.sec_15 p{
+.sec_15 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 30px;
+}
+.sec_15 li {
+  display: inline-block;
+}
+.sec_22{
+  display: block;
+  width: 100%;
+  text-align-last: right;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+footer p{
+  justify-self: center;
+  margin: 20px;
 }
 @media screen and (max-width:767px){
   .sec_1{
     flex-direction:column ;
+    margin: 20px;
   }
   .sec_1 h1{
     font-size: x-large;
@@ -235,8 +253,10 @@ h3{
   .sec_15{
     flex-wrap: wrap;
   }
-  .sec_15 p{
-    margin: 20px;
+  .sec_15 li{
     font-size: small;
+  }
+  .sec_15 ul {
+    margin: 10px;
   }
 }

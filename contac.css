@@ -10,13 +10,13 @@ body{
 }
 .sec_1 ul{
   display: flex;
+  gap: 20px;
 }
 .button1{
   background-color: red;
   color: white;
   font-size: 20px;
   padding: 15px 50px;
-  margin-right: 20px;
 }
 .button2{
   background-color: green;
@@ -83,16 +83,34 @@ img{width: 100%;}
   margin: 5px;
 }
 .sec_15{
-  display: flex;
-  justify-content: space-between;
   border-top: solid 1px;
   margin-top: 50px;
+  border-bottom: solid 1px;
+  margin-bottom: 10px;
 }
-.sec_15 p{
+.sec_15 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 30px;
+}
+.sec_15 li {
+  display: inline-block;
+}
+.sec_22{
+  display: block;
+  width: 100%;
+  text-align-last: right;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+footer p{
+  justify-self: center;
+  margin: 20px;
 }
 .sec_16{
   justify-items: center;
+  text-align-last: center;
 }
 .sec_16 h1{
     margin: 100px 0 30px 0;
@@ -164,6 +182,7 @@ img{width: 100%;}
 @media screen and (max-width:767px){
   .sec_1{
     flex-direction:column ;
+    margin: 20px;
   }
   .sec_1 h1{
     font-size: x-large;
@@ -194,44 +213,60 @@ img{width: 100%;}
     margin: 20px;
     font-size: small;
   }
-  .sec_16{
+  .sec_15 ul{
+    margin: 10px;
+    font-size: small;
+  }
+  .sec_22{
     margin: 10px;
     font-size: small;
     float: left;
   }
+  .sec_16{
+    margin: 10px;
+  }
   .sec_16 p{
-    margin-left: auto;
+   font-size: 15px;
   }
   .sec_17{
     width: 100%;
+    flex-wrap: wrap;
   }
   .sec_17 label{
-    font-size: small;
+    font-size: medium;
     margin: 10px;
     margin-right: 5px;
-    width: 110px;
+    width: auto;
   }
   .sec_18{
     margin-right: 5px;
     width: 50px;
   }
   .sec_21{
-    font-size: small;
+    font-size: medium;
+    flex-wrap: wrap;
+    margin: 10px;
   }
   .sec_21 label{
-    font-size: small;
-    margin-right: 5px;
-    margin-left: 10px;
-    width: 110px;
+    font-size: medium;
+    margin: 10px;
+    width: auto;
   }
   .sec_17 #name {
-    width: 50%;
+    width: 100%;
+    height: 50px;
+    margin: 10px;
   }
   .sec_17 #name2 {
-    width: 50%;
-    font-size: x-small;
+    width: 100%;
+    padding-bottom: 150px;
+    margin: 10px;
+    font-size: medium;
   }
   .sec_14{
     margin-top: 100px;
+  }
+  .sec_22{
+    margin: 10px 0;
   }
 }
